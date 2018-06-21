@@ -1,0 +1,4 @@
+terraform/.terraform/
+packer_cacher
+output*/
+terraform/*state*

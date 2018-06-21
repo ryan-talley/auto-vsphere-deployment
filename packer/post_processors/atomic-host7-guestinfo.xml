@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns:ovf="http://schemas.dmtf.org/ovf/envelope/1" xmlns:vmw="http://www.vmware.com/schema/ovf">
+  <ProductSection>
+    <Info>Information about the installed software</Info>
+    <Category>guestinfo</Category>
+    <!--user.username: required, string, default: N/A-->
+    <Property ovf:userConfigurable="true" ovf:value="user0" ovf:type="string" ovf:key="user.username">
+      <Label>user.username</Label>
+      <Description/>
+    </Property>
+    <!--user.password: required, string, default: N/A-->
+    <Property ovf:userConfigurable="true" ovf:value="Passw0rd!" ovf:type="string" ovf:key="user.password">
+      <Label>user.password</Label>
+      <Description/>
+    </Property>
+    <!--net.ipaddr: optional, IP address, default: 0.0.0.0-->
+    <Property ovf:userConfigurable="true" ovf:value="0.0.0.0" ovf:type="string" vmw:qualifiers="Ip" ovf:key="net.ipaddr">
+      <Label>net.ipaddr</Label>
+      <Description/>
+    </Property>
+    <!--net.netmask: optional, string, default: 255.255.255.0-->
+    <Property ovf:userConfigurable="true" ovf:value="255.255.255.0" ovf:type="string" vmw:qualifiers="Ip" ovf:key="net.netmask">
+      <Label>net.netmask</Label>
+      <Description/>
+    </Property>
+    <!--net.gateway: optional, string, default: 0.0.0.0-->
+    <Property ovf:userConfigurable="true" ovf:value="0.0.0.0" ovf:type="string" vmw:qualifiers="Ip" ovf:key="net.gateway">
+      <Label>net.gateway</Label>
+      <Description/>
+    </Property>
+    <!--net.dns: optional, string (comma separated list of IP addresses), default: N/A-->
+    <Property ovf:userConfigurable="true" ovf:value="8.8.8.8, 9.9.9.9" ovf:type="string" ovf:key="net.dns">
+      <Label>net.dns</Label>
+      <Description/>
+    </Property>
+    <!--net.ntp: optional, string (comma separated list of ntp servers), default: N/A-->
+    <Property ovf:userConfigurable="true" ovf:value="7.7.7.7" ovf:type="string" ovf:key="net.ntp">
+      <Label>net.ntp</Label>
+      <Description/>
+    </Property>
+  </ProductSection>
+</Envelope>

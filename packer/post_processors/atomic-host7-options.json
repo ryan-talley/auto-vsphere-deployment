@@ -1,0 +1,15 @@
+{
+    "DiskProvisioning": "thin",
+    "IPAllocationPolicy": "dhcpPolicy",
+    "IPProtocol": "IPv4",
+    "InjectOvfEnv": false,
+    "Name": "atomic-host7",
+    "NetworkMapping": [
+        {
+            "Name": "VM Network",
+            "Network": ""
+        }
+    ],
+    "PowerOn": false,
+    "WaitForIP": false
+}
